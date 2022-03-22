@@ -17,5 +17,10 @@ app.listen(3000,()=>{
     console.log("server is running succrssfully");
 })
 require('./models/questions');
+require('./models/adminQuestions');
 app.use(express.json());
 app.use(require('./routes/authen'));
+require('./config/logger')
+
+
+

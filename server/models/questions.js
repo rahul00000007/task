@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const questionSchema = mongoose.Schema({
+  questionNumber:{
+  type:String,
+  required:true
+  },
 
     question :{
         type:String,
